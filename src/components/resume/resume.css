@@ -63,3 +63,8 @@
     background-color: #4f3a56;
   }
   
+  @media screen and (max-width:650px) {
+    .resume__container{
+        text-align: center;
+    }
+  }
