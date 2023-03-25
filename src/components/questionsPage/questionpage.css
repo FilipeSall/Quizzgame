@@ -4,8 +4,6 @@
     width: 100vw;
     background-image: linear-gradient(to left, var(--c1), var(--c1-tone));
     user-select: none;
-    min-height: fit-content;
-    border: 1px solid red;
 }
 
 .header {
