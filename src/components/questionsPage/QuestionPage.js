@@ -51,7 +51,6 @@ useEffect(() => {
     setShuffledQuestions(shuffled);
   }, [shuffledQuestionsList]);
 
-
   // Lida com o clique do usuário em uma resposta
   const handleClick = (isCorrect, index) => {
     if (!answered) {

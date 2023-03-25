@@ -400,6 +400,16 @@ const questionsList = [
     ],
   },
   {
+    category: "science",
+    question: "Qual é o nome da unidade de medida de energia?",
+    options: [
+      { answer: "Joule", isCorrect: true },
+      { answer: "Ampere", isCorrect: false },
+      { answer: "Volt", isCorrect: false },
+      { answer: "Watt", isCorrect: false }
+    ],
+  },
+  {
     category: "art",
     question: "Qual o nome da técnica de escultura em que o artista remove material da peça em vez de adicioná-lo?",
     options: [
@@ -479,6 +489,523 @@ const questionsList = [
       { answer: "Clorofila", isCorrect: true },
     ],
   },
+  {
+    category: "history",
+    question: "Qual foi a primeira civilização a desenvolver a escrita?",
+    options: [
+      { answer: "Suméria", isCorrect: true },
+      { answer: "Egípcia", isCorrect: false },
+      { answer: "Babilônica", isCorrect: false },
+      { answer: "Assíria", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi o principal fator que motivou a Revolução Francesa?",
+    options: [
+      { answer: "A independência dos Estados Unidos", isCorrect: false },
+      { answer: "A crise econômica e a fome", isCorrect: true },
+      { answer: "A ascensão do Iluminismo", isCorrect: false },
+      { answer: "A desigualdade social", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é o nome do gás presente em maior quantidade na atmosfera terrestre?",
+    options: [
+      { answer: "Oxigênio", isCorrect: false },
+      { answer: "Hélio", isCorrect: false },
+      { answer: "Dióxido de carbono", isCorrect: false },
+      { answer: "Nitrogênio", isCorrect: true }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é a técnica de escultura em que o artista retira material de uma pedra ou bloco para criar a obra?",
+    options: [
+      { answer: "Cerâmica", isCorrect: false },
+      { answer: "Modelagem", isCorrect: false },
+      { answer: "Relevo", isCorrect: false },
+      { answer: "Cinzelagem", isCorrect: true }
+    ],
+  },
+  {
+    category: "history",
+    question: "Em que ano o Brasil se tornou independente de Portugal?",
+    options: [
+      { answer: "1808", isCorrect: false },
+      { answer: "1822", isCorrect: true },
+      { answer: "1889", isCorrect: false },
+      { answer: "1922", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é o processo em que o calor é transferido por meio da agitação das partículas?",
+    options: [
+      { answer: "Convecção", isCorrect: false },
+      { answer: "Condução", isCorrect: true },
+      { answer: "Radiação", isCorrect: false },
+      { answer: "Fusão", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual o nome do pintor que criou a famosa obra 'A Noite Estrelada'?",
+    options: [
+      { answer: "Vincent van Gogh", isCorrect: true },
+      { answer: "Claude Monet", isCorrect: false },
+      { answer: "Pablo Picasso", isCorrect: false },
+      { answer: "Salvador Dali", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual o nome do famoso escultor italiano que criou a escultura 'David'?",
+    options: [
+      { answer: "Leonardo da Vinci", isCorrect: false },
+      { answer: "Donatello", isCorrect: false },
+      { answer: "Michelangelo", isCorrect: true },
+      { answer: "Rafael Sanzio", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual o nome da filosofia que surgiu na Grécia Antiga e pregava a busca pelo autoconhecimento?",
+    options: [
+      { answer: "Existencialismo", isCorrect: false },
+      { answer: "Helenismo", isCorrect: false },
+      { answer: "Stoicismo", isCorrect: true },
+      { answer: "Ceticismo", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual a corrente elétrica que é alternada, mudando de sentido constantemente?",
+    options: [
+      { answer: "Corrente contínua", isCorrect: false },
+      { answer: "Corrente elétrica induzida", isCorrect: false },
+      { answer: "Corrente elétrica parcial", isCorrect: false },
+      { answer: "Corrente alternada", isCorrect: true }
+    ],
+  }, {
+    category: "history",
+    question: "Em que ano foi descoberto o Brasil pelos portugueses?",
+    options: [
+      { answer: "1500", isCorrect: true },
+      { answer: "1492", isCorrect: false },
+      { answer: "1808", isCorrect: false },
+      { answer: "1822", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Quem foi o primeiro presidente do Brasil?",
+    options: [
+      { answer: "Getúlio Vargas", isCorrect: false },
+      { answer: "Juscelino Kubitschek", isCorrect: false },
+      { answer: "Deodoro da Fonseca", isCorrect: true },
+      { answer: "Itamar Franco", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é o planeta mais próximo do Sol?",
+    options: [
+      { answer: "Mercúrio", isCorrect: true },
+      { answer: "Vênus", isCorrect: false },
+      { answer: "Marte", isCorrect: false },
+      { answer: "Saturno", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é a unidade de medida de resistência elétrica?",
+    options: [
+      { answer: "Volt", isCorrect: false },
+      { answer: "Ampere", isCorrect: false },
+      { answer: "Ohm", isCorrect: true },
+      { answer: "Watt", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual artista é conhecido por suas pinturas de latas de sopa Campbell?",
+    options: [
+      { answer: "Pablo Picasso", isCorrect: false },
+      { answer: "Vincent van Gogh", isCorrect: false },
+      { answer: "Roy Lichtenstein", isCorrect: false },
+      { answer: "Andy Warhol", isCorrect: true }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é a arte de fazer esculturas em argila?",
+    options: [
+      { answer: "Pintura", isCorrect: false },
+      { answer: "Artesanato", isCorrect: false },
+      { answer: "Escultura", isCorrect: false },
+      { answer: "Cerâmica", isCorrect: true }
+    ],
+  }, {
+    category: "science",
+    question: "Qual é o nome dado à substância que retarda a velocidade de uma reação química?",
+    options: [
+      { answer: "Inibidor", isCorrect: true },
+      { answer: "Catalisador", isCorrect: false },
+      { answer: "Ácido", isCorrect: false },
+      { answer: "Base", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é o nome do processo de transferência de calor que ocorre entre dois objetos em contato direto?",
+    options: [
+      { answer: "Condução", isCorrect: true },
+      { answer: "Convecção", isCorrect: false },
+      { answer: "Radiação", isCorrect: false },
+      { answer: "Transmissão", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é o nome dado à quantidade de matéria de um objeto?",
+    options: [
+      { answer: "Massa", isCorrect: true },
+      { answer: "Peso", isCorrect: false },
+      { answer: "Densidade", isCorrect: false },
+      { answer: "Volume", isCorrect: false }
+    ],
+  }, {
+    category: "history",
+    question: "Em que ano ocorreu a Revolução Francesa?",
+    options: [
+      { answer: "1789", isCorrect: true },
+      { answer: "1791", isCorrect: false },
+      { answer: "1804", isCorrect: false },
+      { answer: "1815", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi a dinastia que governou a China por mais tempo na história?",
+    options: [
+      { answer: "Dinastia Zhou", isCorrect: false },
+      { answer: "Dinastia Han", isCorrect: true },
+      { answer: "Dinastia Tang", isCorrect: false },
+      { answer: "Dinastia Song", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi a primeira dinastia a governar o Egito?",
+    options: [
+      { answer: "Dinastia Ptolemaica", isCorrect: false },
+      { answer: "Dinastia Hicsa", isCorrect: false },
+      { answer: "Dinastia Menés", isCorrect: true },
+      { answer: "Dinastia Aksumita", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Quem foi o autor do famoso quadro 'A Noite Estrelada'?",
+    options: [
+      { answer: "Leonardo da Vinci", isCorrect: false },
+      { answer: "Vincent van Gogh", isCorrect: true },
+      { answer: "Pablo Picasso", isCorrect: false },
+      { answer: "Claude Monet", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Quem foi o principal representante do movimento artístico chamado cubismo?",
+    options: [
+      { answer: "Vincent van Gogh", isCorrect: false },
+      { answer: "Pablo Picasso", isCorrect: true },
+      { answer: "Salvador Dalí", isCorrect: false },
+      { answer: "Expressionismo", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o nome do artista que produziu a famosa obra de arte chamada Mona Lisa?",
+    options: [
+      { answer: "Vincent van Gogh", isCorrect: false },
+      { answer: "Pablo Picasso", isCorrect: false },
+      { answer: "Leonardo da Vinci", isCorrect: true },
+      { answer: "Michelangelo", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Quem foi o líder político responsável pela independência do Brasil?",
+    options: [
+      { answer: "Pedro Álvares Cabral", isCorrect: false },
+      { answer: "Dom Pedro II", isCorrect: false },
+      { answer: "José Bonifácio", isCorrect: false },
+      { answer: "Dom Pedro I", isCorrect: true }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é a unidade básica de vida dos seres vivos?",
+    options: [
+      { answer: "Proteína", isCorrect: false },
+      { answer: "Átomo", isCorrect: false },
+      { answer: "Célula", isCorrect: true },
+      { answer: "DNA", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual país anexou a Crimeia em 2014, dando início ao conflito na Ucrânia?",
+    options: [
+      { answer: "Rússia", isCorrect: true },
+      { answer: "China", isCorrect: false },
+      { answer: "Estados Unidos", isCorrect: false },
+      { answer: "Alemanha", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Quem criou o sistema de coordenadas cartesianas?",
+    options: [
+      { answer: "Euclides", isCorrect: false },
+      { answer: "Isaac Newton", isCorrect: false },
+      { answer: "René Descartes", isCorrect: true },
+      { answer: "Blaise Pascal", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Quem é considerado o pai da matemática moderna?",
+    options: [
+      { answer: "Euclides", isCorrect: false },
+      { answer: "Isaac Newton", isCorrect: false },
+      { answer: "René Descartes", isCorrect: true },
+      { answer: "Blaise Pascal", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Quem é considerado o pai da matemática moderna?",
+    options: [
+      { answer: "Euclides", isCorrect: false },
+      { answer: "Isaac Newton", isCorrect: false },
+      { answer: "René Descartes", isCorrect: true },
+      { answer: "Blaise Pascal", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Quem é considerado o pai da música eletrônica?",
+    options: [
+      { answer: "Kraftwerk", isCorrect: false },
+      { answer: "Brian Eno", isCorrect: false },
+      { answer: "Jean-Michel Jarre", isCorrect: false },
+      { answer: "Karlheinz Stockhausen", isCorrect: true }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual o estilo de música eletrônica que surgiu na década de 1980 em Detroit e é caracterizado por batidas repetitivas, sintetizadores e baixos graves?",
+    options: [
+      { answer: "House", isCorrect: false },
+      { answer: "Techno", isCorrect: true },
+      { answer: "Trance", isCorrect: false },
+      { answer: "Dubstep", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual o nome do estilo de música eletrônica que surgiu na Inglaterra nos anos 90, caracterizado por batidas rápidas, samples de vocais e breakbeats?",
+    options: [
+      { answer: "Drum and Bass", isCorrect: true },
+      { answer: "Hardcore", isCorrect: false },
+      { answer: "Gabber", isCorrect: false },
+      { answer: "Trip Hop", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual das seguintes obras é uma composição barroca do compositor alemão Johann Sebastian Bach?",
+    options: [
+      { answer: "Sinfonia nº 5", isCorrect: false },
+      { answer: "Fur Elise", isCorrect: false },
+      { answer: "Suite para Orquestra nº 3", isCorrect: true },
+      { answer: "Marcha Fúnebre", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual instrumento musical é considerado uma das principais características da música barroca?",
+    options: [
+      { answer: "Guitarra", isCorrect: false },
+      { answer: "Piano", isCorrect: false },
+      { answer: "Órgão", isCorrect: true },
+      { answer: "Bateria", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual foi o álbum lançado em 2011 pela cantora Lady Gaga que se inspirou na música e na cultura da Índia?",
+    options: [
+      { answer: "The Fame", isCorrect: false },
+      { answer: "Born This Way", isCorrect: false },
+      { answer: "Artpop", isCorrect: false },
+      { answer: "ARTPOP", isCorrect: true }
+    ]
+  },
+  {
+    category: "science",
+    question: "Qual é a classificação dos cachorros de acordo com a FCI (Fédération Cynologique Internationale)?",
+    options: [
+      { answer: "Grupo 1 - Cães de Pastor e Boieiros", isCorrect: false },
+      { answer: "Grupo 6 - Cães de Levante e Corso e Raças Semelhantes", isCorrect: false },
+      { answer: "Grupo 8 - Cães de Companhia", isCorrect: false },
+      { answer: "Grupo 9 - Cães de Companhia e Toy", isCorrect: true }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual batalha da Primeira Guerra Mundial ficou conhecida como a 'Guerra das Trincheiras'?",
+    options: [
+      { answer: "Batalha de Somme", isCorrect: false },
+      { answer: "Batalha de Passchendaele", isCorrect: false },
+      { answer: "Batalha de Verdun", isCorrect: true },
+      { answer: "Batalha de Jutlândia", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi a principal batalha naval da Primeira Guerra Mundial?",
+    options: [
+      { answer: "Batalha de Tsushima", isCorrect: false },
+      { answer: "Batalha de Jutlândia", isCorrect: true },
+      { answer: "Batalha de Tannenberg", isCorrect: false },
+      { answer: "Batalha do Rio da Prata", isCorrect: false }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual o inseto que é considerado o animal que mais mata seres humanos no mundo?",
+    options: [
+      { answer: "Moscas", isCorrect: false },
+      { answer: "Formigas", isCorrect: false },
+      { answer: "Abelhas", isCorrect: false },
+      { answer: "Mosquitos", isCorrect: true }
+    ],
+  },
+  {
+    category: "science",
+    question: "Qual é a principal forma de prevenção contra o COVID-19?",
+    options: [
+      { answer: "Usar máscara somente em locais fechados", isCorrect: false },
+      { answer: "Lavar as mãos frequentemente", isCorrect: true },
+      { answer: "Ficar longe de pessoas idosas", isCorrect: false },
+      { answer: "Tomar antibióticos preventivamente", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o subgênero da música eletrônica que se originou em Detroit, Estados Unidos, nos anos 1980, e é conhecido por suas batidas rítmicas e repetitivas?",
+    options: [
+      { answer: "House", isCorrect: false },
+      { answer: "Techno", isCorrect: true },
+      { answer: "Trance", isCorrect: false },
+      { answer: "Drum and Bass", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o subgênero da música eletrônica que se caracteriza por suas batidas lentas, influência do R&B e soul, e uso de sintetizadores e samples vocais?",
+    options: [
+      { answer: "Deep House", isCorrect: true },
+      { answer: "Techno", isCorrect: false },
+      { answer: "Trance", isCorrect: false },
+      { answer: "Drum and Bass", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Em que filme Leonardo DiCaprio ganhou o Oscar de Melhor Ator em 2016?",
+    options: [
+      { answer: "O Lobo de Wall Street", isCorrect: false },
+      { answer: "Os Infiltrados", isCorrect: false },
+      { answer: "Django Livre", isCorrect: false },
+      { answer: "O Regresso", isCorrect: true }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi a principal mudança que ocorreu na sociedade japonesa durante o período medieval?",
+    options: [
+      { answer: "A abolição do sistema de classes sociais", isCorrect: false },
+      { answer: "O fortalecimento do poder dos samurais", isCorrect: true },
+      { answer: "A introdução do cristianismo", isCorrect: false },
+      { answer: "O aumento da influência chinesa", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi o nome dado ao período em que o Japão ficou isolado do resto do mundo?",
+    options: [
+      { answer: "Período Kamakura", isCorrect: false },
+      { answer: "Período Heian", isCorrect: false },
+      { answer: "Período Edo", isCorrect: false },
+      { answer: "Período Sakoku", isCorrect: true }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi a principal arma utilizada pelos samurais durante o período medieval no Japão?",
+    options: [
+      { answer: "Katana", isCorrect: true },
+      { answer: "Naginata", isCorrect: false },
+      { answer: "Yumi (arco)", isCorrect: false },
+      { answer: "Tachi", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o nome do estilo de rock que é caracterizado pela utilização de guitarras distorcidas, bateria pesada e vocais gritados?",
+    options: [
+      { answer: "Grunge", isCorrect: false },
+      { answer: "Punk Rock", isCorrect: false },
+      { answer: "Heavy Metal", isCorrect: true },
+      { answer: "Indie Rock", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o nome da banda conhecida por ser pioneira no gênero de heavy metal?",
+    options: [
+      { answer: "AC/DC", isCorrect: false },
+      { answer: "Led Zeppelin", isCorrect: false },
+      { answer: "Black Sabbath", isCorrect: true },
+      { answer: "Deep Purple", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o nome do movimento musical que se originou no Reino Unido no final da década de 1970, caracterizado por letras politizadas e instrumentação simples?",
+    options: [
+      { answer: "Rock Alternativo", isCorrect: false },
+      { answer: "Grunge", isCorrect: false },
+      { answer: "Punk Rock", isCorrect: true },
+      { answer: "Heavy Metal", isCorrect: false }
+    ],
+  },
+  {
+category: "science",
+question: "Qual era o objetivo principal da alquimia?",
+options: [
+{ answer: "Descobrir a cura para doenças", isCorrect: false },
+{ answer: "Transformar metais em ouro", isCorrect: true },
+{ answer: "Desenvolver a física moderna", isCorrect: false },
+{ answer: "Estudar a astrologia", isCorrect: false }
+],
+},  
 ];
 
 export default questionsList;
