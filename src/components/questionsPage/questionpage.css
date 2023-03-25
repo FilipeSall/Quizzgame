@@ -4,6 +4,7 @@
     width: 100vw;
     background-image: linear-gradient(to left, var(--c1), var(--c1-tone));
     user-select: none;
+    border: 1px solid red;
 }
 
 .header {
@@ -28,6 +29,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: auto; 
+
 }
 
 .question-card {
