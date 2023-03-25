@@ -123,3 +123,23 @@
         transform: translateX(0);
     }
 }
+
+@media screen and (max-width:650px) {
+    .app-icon > svg {
+        left: -30%;
+        top: -50%;
+    }
+
+    .form {
+        width: 70%;
+        min-height: fit-content;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    .input__container > input {
+        width: 70vw;
+    }
+   
+}

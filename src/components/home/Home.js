@@ -65,12 +65,12 @@ function Home() {
       <form className='form'>
         <div className='input__container'>
             <label htmlFor='name'>Digite seu nome</label>
-            <input type='text' id='name' value={nome} onChange={handleNameChange} className={`${nomeValidation === false ? 'input-error' : 'input-ok'}`} required onBlur={handleNameBlur} />
+            <input type='text' id='name' value={nome} onChange={handleNameChange} className={`${nomeValidation === false ? 'input-error' : 'input-ok'} input`} required onBlur={handleNameBlur} />
             {nomeValidation === false? <p className='error-mensage'>Campo precisa ser preenchido.</p> : ''}
         </div>
         <div className="input__container">
             <label>Digite seu email</label>
-            <input type='email' id='email' value={email} onChange={handleEmailChange} className={`${emailValidation === false ? 'input-error' : 'input-ok'}`} onBlur={handleEmailBlur} required  />
+            <input type='email' id='email' value={email} onChange={handleEmailChange} className={`${emailValidation === false ? 'input-error' : 'input-ok'} input`} onBlur={handleEmailBlur} required  />
             {emailValidation === false ? <p className='error-mensage'> Preencha um email valido.</p> :'' }
         </div>
         <div className='btn__container'>
