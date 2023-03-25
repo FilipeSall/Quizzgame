@@ -176,7 +176,7 @@
 
 @media screen and (max-width:650px) {
     .question__container{
-        min-height: fit-content;
+        height: fit-content;
     }
 
     .header {
@@ -190,13 +190,20 @@
         margin-top: 1%;
     }
 
+    .question-wrapper {
+        height: fit-content;
+    }
+
     .question-card{
         flex-wrap: nowrap;
         height: 100%;
+        width: 100%;
     }
 
     .question-card > h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin: 15px;
+        text-align: start;
     }
 
     .button-wrapper {
@@ -204,7 +211,12 @@
     }
     .awnser-btn{
         font-size: 1rem;
-        height: 5vh;
+        height: 10vh;
         min-width: 75%;
     }
+    .log-out__btn{
+        margin-left: 80%;
+        opacity: 0.6;
+    }
+    
 }
