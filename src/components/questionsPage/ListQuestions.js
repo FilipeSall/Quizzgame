@@ -471,7 +471,7 @@ const questionsList = [
   },
   {
     category: "history",
-    question: "Qual foi o nome do período histórico que ocorreu logo após a Idade Média, caracterizado pela retomada dos estudos da cultura greco-romana e pela valorização do racionalismo e da razão humana?",
+    question: "Qual foi o nome do período histórico que ocorreu logo após a Idade Média, caracterizado pela retomada dos estudos da cultura greco-romana e pela valorização do racionalismo?",
     options: [
       { answer: "Renascimento", isCorrect: true },
       { answer: "Barroco", isCorrect: false },
@@ -997,15 +997,85 @@ const questionsList = [
     ],
   },
   {
-category: "science",
-question: "Qual era o objetivo principal da alquimia?",
+    category: "science",
+    question: "Qual era o objetivo principal da alquimia?",
+    options: [
+      { answer: "Descobrir a cura para doenças", isCorrect: false },
+      { answer: "Transformar metais em ouro", isCorrect: true },
+      { answer: "Desenvolver a física moderna", isCorrect: false },
+      { answer: "Estudar a astrologia", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o nome do compositor responsável pela icônica trilha sonora de Star Wars?",
+    options: [
+      { answer: "John Williams", isCorrect: true },
+      { answer: "Hans Zimmer", isCorrect: false },
+      { answer: "Ennio Morricone", isCorrect: false },
+      { answer: "Howard Shore", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual é o nome do diretor responsável pelo episódio IV de Star Wars, lançado em 1977?",
+    options: [
+      { answer: "Steven Spielberg", isCorrect: false },
+      { answer: "Ridley Scott", isCorrect: false },
+      { answer: "George Lucas", isCorrect: true },
+      { answer: "James Cameron", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual o estilista que é considerado o 'pai' da moda minimalista?",
+    options: [
+      { answer: "Giorgio Armani", isCorrect: false },
+      { answer: "Ralph Lauren", isCorrect: false },
+      { answer: "Calvin Klein", isCorrect: true },
+      { answer: "Tom Ford", isCorrect: false }
+    ],
+  },
+  {
+    category: "art",
+    question: "Qual o nome do estilista italiano famoso por criar sapatos com solas vermelhas?",
+    options: [
+      { answer: "Manolo Blahnik", isCorrect: false },
+      { answer: "Christian Louboutin", isCorrect: true },
+      { answer: "Jimmy Choo", isCorrect: false },
+      { answer: "Salvatore Ferragamo", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+question: "Qual foi o primeiro jornal brasileiro dedicado exclusivamente à divulgação científica?",
 options: [
-{ answer: "Descobrir a cura para doenças", isCorrect: false },
-{ answer: "Transformar metais em ouro", isCorrect: true },
-{ answer: "Desenvolver a física moderna", isCorrect: false },
-{ answer: "Estudar a astrologia", isCorrect: false }
-],
-},  
+  { answer: "Revista Ciência e Vida", isCorrect: false },
+  { answer: "Revista Brasileira de Ciência", isCorrect: false },
+  { answer: "Ciência Hoje", isCorrect: false },
+  { answer: "Ciência e Cultura", isCorrect: true }
+    ],
+  },
+  {
+    category: "history",
+    question: "Qual foi o primeiro jornal publicado no Brasil e em que ano ele foi lançado?",
+    options: [
+      { answer: "Gazeta do Rio de Janeiro, 1808", isCorrect: true },
+      { answer: "Correio Braziliense, 1808", isCorrect: false },
+      { answer: "Diário do Rio de Janeiro, 1821", isCorrect: false },
+      { answer: "Jornal do Commercio, 1827", isCorrect: false }
+    ],
+  },
+  {
+    category: "history",
+    question: "Em que ano a Áustria foi anexada pela Alemanha nazista?",
+    options: [
+      { answer: "1936", isCorrect: false },
+      { answer: "1938", isCorrect: true },
+      { answer: "1940", isCorrect: false },
+      { answer: "1942", isCorrect: false }
+    ],
+  },  
 ];
 
 export default questionsList;

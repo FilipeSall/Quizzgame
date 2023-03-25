@@ -25,13 +25,12 @@ function QuestionPage() {
   // Index da opção clicada e array embaralhado de perguntas
   const [clickedOptionIndex, setClickedOptionIndex] = useState(null);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-
   const [shuffledQuestionsList, setShuffledQuestionsList] = useState([]);
 
-useEffect(() => {
-  const shuffledList = questionsList.sort(() => Math.random() - 0.5);
-  setShuffledQuestionsList(shuffledList);
-}, []);
+  useEffect(() => {
+    const shuffledList = questionsList.sort(() => Math.random() - 0.5);
+    setShuffledQuestionsList(shuffledList);
+  }, []);
 
   // Embaralha as perguntas quando o componente é montado
   useEffect(() => {
@@ -79,10 +78,9 @@ useEffect(() => {
           return updatedScore;
 
         });
-
       }
     };
-   
+
     // Se for a última pergunta, redireciona para a tela de resumo
     if (questionIndex === shuffledQuestions.length - 1) {
       navigate('/resumo');
@@ -100,8 +98,7 @@ useEffect(() => {
   };
 
   // Seleciona a pergunta atual a partir do array embaralhado ou não
-const currentQuestion = shuffledQuestions.length > 0 ? shuffledQuestions[questionIndex] : questionsList[questionIndex];
-
+  const currentQuestion = shuffledQuestions.length > 0 ? shuffledQuestions[questionIndex] : questionsList[questionIndex];
 
   // Lida com o logout e redireciona para a tela de login
   const handleLogout = () => {
