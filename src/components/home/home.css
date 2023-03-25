@@ -1,0 +1,125 @@
+.home__container {
+    width: 100vw;
+    height: 100vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, var(--c1), var(--c1-tone));
+}
+
+.title__container {
+    font-size: 3rem;
+    font-family: Tilt Neon, 'Times New Roman', Times, serif;
+    color: var(--c2-tone);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    min-height: fit-content;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5% 0;
+}
+
+.input__container>input {
+    width: 30vw;
+    height: 5vh;
+    font-size: 1.4rem;
+    padding: 4px;
+}
+
+.app-icon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-icon > svg {
+    position: absolute;
+    left: -50%;
+    top: -70%;
+    z-index: 1;
+    animation: pacMan 0.5s linear infinite;
+  }
+  
+  @keyframes pacMan {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.input-error {
+    animation: shake 0.5s;
+    border: 1px solid red;
+}
+
+.error-mensage {
+    color: #000000;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.input-ok {
+    border: 1px solid var(--c3);
+}
+
+.btn__container {
+    width: 30vw;
+    height: fit-content;
+}
+
+.btn__container>a,
+.btn__container>button {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    background-color: var(--c3);
+    color: var(--c6-tone);
+    padding: 10px;
+    border-radius: 8px;
+    min-height: fit-content;
+}
+
+.btn__container>a:focus,
+.btn__container>button {
+    border: 1px solid var(--c3);
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
