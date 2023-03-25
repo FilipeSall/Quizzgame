@@ -83,7 +83,9 @@ function QuestionPage() {
 
     // Se for a última pergunta, redireciona para a tela de resumo
     if (questionIndex === shuffledQuestions.length - 1) {
-      navigate('/resumo');
+      setTimeout(() => {
+        navigate('/resumo');
+      }, 1000);
     }
   };
 
