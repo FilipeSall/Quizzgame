@@ -1048,12 +1048,12 @@ const questionsList = [
   },
   {
     category: "history",
-question: "Qual foi o primeiro jornal brasileiro dedicado exclusivamente à divulgação científica?",
-options: [
-  { answer: "Revista Ciência e Vida", isCorrect: false },
-  { answer: "Revista Brasileira de Ciência", isCorrect: false },
-  { answer: "Ciência Hoje", isCorrect: false },
-  { answer: "Ciência e Cultura", isCorrect: true }
+    question: "Qual foi o primeiro jornal brasileiro dedicado exclusivamente à divulgação científica?",
+    options: [
+      { answer: "Revista Ciência e Vida", isCorrect: false },
+      { answer: "Revista Brasileira de Ciência", isCorrect: false },
+      { answer: "Ciência Hoje", isCorrect: false },
+      { answer: "Ciência e Cultura", isCorrect: true }
     ],
   },
   {
@@ -1075,7 +1075,560 @@ options: [
       { answer: "1940", isCorrect: false },
       { answer: "1942", isCorrect: false }
     ],
-  },  
+  },
+
+  //divisao de tema
+  {
+    question: "Qual é o nome do álbum mais vendido de todos os tempos, lançado pelo cantor Michael Jackson em 1982?",
+    options: [
+      { answer: "Bad", isCorrect: false },
+      { answer: "Thriller", isCorrect: true },
+      { answer: "Off the Wall", isCorrect: false },
+      { answer: "Dangerous", isCorrect: false }
+    ],
+    category: 'music'
+  },
+  {
+    question: "Qual é a música mais famosa da banda britânica Queen, lançada em 1975?",
+    options: [
+      { answer: "Bohemian Rhapsody", isCorrect: true },
+      { answer: "We Will Rock You", isCorrect: false },
+      { answer: "Somebody to Love", isCorrect: false },
+      { answer: "Don't Stop Me Now", isCorrect: false }
+    ],
+    category: 'music'
+  },
+  {
+    question: "Qual foi o primeiro filme da saga 'Star Wars' lançado em 1977?",
+    options: [
+      { answer: "Star Wars: A New Hope", isCorrect: true },
+      { answer: "The Empire Strikes Back", isCorrect: false },
+      { answer: "Return of the Jedi", isCorrect: false },
+      { answer: "The Force Awakens", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o jogo de videogame mais vendido de todos os tempos?",
+    options: [
+      { answer: "Minecraft", isCorrect: false },
+      { answer: "Tetris", isCorrect: true },
+      { answer: "Grand Theft Auto V", isCorrect: false },
+      { answer: "Wii Sports", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Quem é o principal vilão em 'The Legend of Zelda: Ocarina of Time'?",
+    options: [
+      { answer: "Ganondorf", isCorrect: true },
+      { answer: "Ganon", isCorrect: false },
+      { answer: "Zant", isCorrect: false },
+      { answer: "Vaati", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome do protagonista de 'Assassin's Creed'?",
+    options: [
+      { answer: "Ezio Auditore", isCorrect: false },
+      { answer: "Altaïr Ibn-La'Ahad", isCorrect: false },
+      { answer: "Connor Kenway", isCorrect: false },
+      { answer: "Desmond Miles", isCorrect: true }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o primeiro jogo da série 'Final Fantasy'?",
+    options: [
+      { answer: "Final Fantasy VI", isCorrect: false },
+      { answer: "Final Fantasy V", isCorrect: false },
+      { answer: "Final Fantasy I", isCorrect: true },
+      { answer: "Final Fantasy IV", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Em 'League of Legends', qual é o nome do campeão que é um yordle de cor rosa e que é conhecido por ser o piloto de um mecha gigante?",
+    options: [
+      { answer: "Lulu", isCorrect: false },
+      { answer: "Poppy", isCorrect: true },
+      { answer: "Ziggs", isCorrect: false },
+      { answer: "Teemo", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o campeão de League of Legends mais popular atualmente?",
+    options: [
+      { answer: "Yone", isCorrect: false },
+      { answer: "Senna", isCorrect: false },
+      { answer: "Samira", isCorrect: false },
+      { answer: "Seraphine", isCorrect: true }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome da liga profissional de League of Legends na América do Norte?",
+    options: [
+      { answer: "LPL", isCorrect: false },
+      { answer: "LEC", isCorrect: false },
+      { answer: "LCK", isCorrect: false },
+      { answer: "LCS", isCorrect: true }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o objetivo principal do jogo League of Legends?",
+    options: [
+      { answer: "Destruir a base do time adversário", isCorrect: true },
+      { answer: "Matar o máximo de inimigos possível", isCorrect: false },
+      { answer: "Capturar torres inimigas", isCorrect: false },
+      { answer: "Coletar recursos para o time", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome do famoso festival de música eletrônica que acontece anualmente em Las Vegas?",
+    options: [
+      { answer: "EDC", isCorrect: true },
+      { answer: "Ultra Music Festival", isCorrect: false },
+      { answer: "Tomorrowland", isCorrect: false },
+      { answer: "Sensation", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: "Quem é o artista sueco que fez sucesso mundial com a música 'Levels'?",
+    options: [
+      { answer: "Swedish House Mafia", isCorrect: false },
+      { answer: "Axwell", isCorrect: false },
+      { answer: "Alesso", isCorrect: false },
+      { answer: "Avicii", isCorrect: true }
+    ],
+    category: "music"
+  },
+  {
+    question: "Que termo é usado para se referir a uma batida constante e repetitiva na música eletrônica?",
+    options: [
+      { answer: "Melodia", isCorrect: false },
+      { answer: "Drop", isCorrect: false },
+      { answer: "Chorus", isCorrect: false },
+      { answer: "Beat", isCorrect: true }
+    ],
+    category: "music"
+  },
+  {
+    question: "Qual é o nome do protagonista de Arcane?",
+    options: [
+      { answer: "Vi", isCorrect: false },
+      { answer: "Jinx", isCorrect: false },
+      { answer: "Powder", isCorrect: true },
+      { answer: "Silco", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é a cidade onde se passa a história de Arcane?",
+    options: [
+      { answer: "Piltover", isCorrect: true },
+      { answer: "Zaun", isCorrect: false },
+      { answer: "Demacia", isCorrect: false },
+      { answer: "Noxus", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o filme de maior bilheteria de 2021 até o momento?",
+    options: [
+      { answer: "Shang-Chi e a Lenda dos Dez Anéis", isCorrect: true },
+      { answer: "Velozes e Furiosos 9", isCorrect: false },
+      { answer: "Viúva Negra", isCorrect: false },
+      { answer: "Godzilla vs. Kong", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual filme de 2020 arrecadou mais dinheiro nas bilheterias mundiais?",
+    options: [
+      { answer: "Sonic - O Filme", isCorrect: false },
+      { answer: "Tenet", isCorrect: true },
+      { answer: "Mulan", isCorrect: false },
+      { answer: "O Homem Invisível", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual filme de comédia romântica foi sucesso de bilheteria em 2021?",
+    options: [
+      { answer: "Era Uma Vez um Sonho", isCorrect: false },
+      { answer: "Resgate do Coração", isCorrect: false },
+      { answer: "Cruella", isCorrect: false },
+      { answer: "Sim Senhoras", isCorrect: true }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o personagem principal do jogo de plataforma Super Mario Bros?",
+    options: [
+      { answer: "Mario", isCorrect: true },
+      { answer: "Luigi", isCorrect: false },
+      { answer: "Peach", isCorrect: false },
+      { answer: "Toad", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Em qual cidade fictícia se passa o jogo Grand Theft Auto V?",
+    options: [
+      { answer: "Vice City", isCorrect: false },
+      { answer: "San Andreas", isCorrect: false },
+      { answer: "Los Santos", isCorrect: true },
+      { answer: "Liberty City", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Em que ano foi lançado o jogo de estratégia Warcraft III: Reign of Chaos?",
+    options: [
+      { answer: "2000", isCorrect: false },
+      { answer: "2002", isCorrect: true },
+      { answer: "2004", isCorrect: false },
+      { answer: "2006", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome do robô azul protagonista da série de jogos Mega Man?",
+    options: [
+      { answer: "Mega Man", isCorrect: true },
+      { answer: "Proto Man", isCorrect: false },
+      { answer: "Bass", isCorrect: false },
+      { answer: "Roll", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual foi o ano de lançamento do jogo The Sims?",
+    options: [
+      { answer: "2000", isCorrect: true },
+      { answer: "2004", isCorrect: false },
+      { answer: "2008", isCorrect: false },
+      { answer: "2012", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Em The Sims, qual é a carreira que permite que o jogador controle um hospital?",
+    options: [
+      { answer: "Médico", isCorrect: true },
+      { answer: "Advogado", isCorrect: false },
+      { answer: "Engenheiro", isCorrect: false },
+      { answer: "Professor", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é a primeira expansão de The Sims?",
+    options: [
+      { answer: "The Sims: Férias", isCorrect: false },
+      { answer: "The Sims: Encontro Marcado", isCorrect: false },
+      { answer: "The Sims: Num Passe de Mágica", isCorrect: false },
+      { answer: "The Sims: O Bicho Vai Pegar", isCorrect: true }
+    ],
+    category: "games"
+  },
+  {
+    question: 'Qual é o nome do personagem principal do filme "Watchmen"?',
+    options: [
+      { answer: "Rorschach", isCorrect: true },
+      { answer: "Dr. Manhattan", isCorrect: false },
+      { answer: "Ozymandias", isCorrect: false },
+      { answer: "Espectral", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Quem dirigiu o filme "Watchmen" lançado em 2009?',
+    options: [
+      { answer: "Christopher Nolan", isCorrect: false },
+      { answer: "Zack Snyder", isCorrect: true },
+      { answer: "Tim Burton", isCorrect: false },
+      { answer: "James Cameron", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual é o nome do grupo de super-heróis que os personagens de "Watchmen" faziam parte?',
+    options: [
+      { answer: "X-Men", isCorrect: false },
+      { answer: "The Avengers", isCorrect: false },
+      { answer: "The Comedian", isCorrect: false },
+      { answer: "The Watchmen", isCorrect: true }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do apartamento onde os personagens de Friends moram?",
+    options: [
+      { answer: "Central Perk", isCorrect: false },
+      { answer: "Café do Pete", isCorrect: false },
+      { answer: "Apartamento da Mônica", isCorrect: true },
+      { answer: "Casa de Joey", isCorrect: false }
+    ],
+    category: "movies",
+  },
+  {
+    question: 'Qual é o nome do café onde os personagens de Friends sempre se encontram?',
+    options: [
+      { answer: "Central Perk", isCorrect: true },
+      { answer: "The Coffee House", isCorrect: false },
+      { answer: "The Daily Grind", isCorrect: false },
+      { answer: "The Bean Scene", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual é o nome do pai de Ross e Monica?',
+    options: [
+      { answer: "Jack", isCorrect: true },
+      { answer: "Bob", isCorrect: false },
+      { answer: "Ben", isCorrect: false },
+      { answer: "Frank", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual personagem de Friends tem um macaco como animal de estimação?',
+    options: [
+      { answer: "Joey", isCorrect: false },
+      { answer: "Ross", isCorrect: true },
+      { answer: "Chandler", isCorrect: false },
+      { answer: "Phoebe", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual é a profissão de Chandler Bing em Friends?',
+    options: [
+      { answer: "Contador", isCorrect: false },
+      { answer: "Ator", isCorrect: false },
+      { answer: "Publicitário", isCorrect: true },
+      { answer: "Médico", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual personagem de Friends canta "Smelly Cat" em um café?',
+    options: [
+      { answer: "Phoebe", isCorrect: true },
+      { answer: "Monica", isCorrect: false },
+      { answer: "Rachel", isCorrect: false },
+      { answer: "Janice", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual é o nome da irmã gêmea de Phoebe em Friends?',
+    options: [
+      { answer: "Ursula", isCorrect: true },
+      { answer: "Janice", isCorrect: false },
+      { answer: "Judy", isCorrect: false },
+      { answer: "Carol", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual personagem de Friends é alérgico a gatos?',
+    options: [
+      { answer: "Chandler", isCorrect: true },
+      { answer: "Ross", isCorrect: false },
+      { answer: "Joey", isCorrect: false },
+      { answer: "Monica", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual é o nome do apartamento onde os personagens de Friends moram?',
+    options: [
+      { answer: "Central Perk", isCorrect: false },
+      { answer: "Café do Pete", isCorrect: false },
+      { answer: "Apartamento da Mônica", isCorrect: true },
+      { answer: "Casa de Joey", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual é o nome da banda de rock que lançou a música "Stairway to Heaven"?',
+    options: [
+      { answer: "The Rolling Stones", isCorrect: false },
+      { answer: "Led Zeppelin", isCorrect: true },
+      { answer: "Pink Floyd", isCorrect: false },
+      { answer: "The Beatles", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome da música do Queen que começa com "Is this the real life? Is this just fantasy?"?',
+    options: [
+      { answer: "Bohemian Rhapsody", isCorrect: true },
+      { answer: "We Will Rock You", isCorrect: false },
+      { answer: "We Are the Champions", isCorrect: false },
+      { answer: "Somebody to Love", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome do álbum do Pink Floyd que ficou 741 semanas nas paradas de sucesso nos Estados Unidos?',
+    options: [
+      { answer: "Wish You Were Here", isCorrect: false },
+      { answer: "The Wall", isCorrect: true },
+      { answer: "Dark Side of the Moon", isCorrect: false },
+      { answer: "Animals", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o estilo de música popular na década de 1970, que tem como principais características a guitarra elétrica e a bateria forte?',
+    options: [
+      { answer: "Jazz", isCorrect: false },
+      { answer: "Pop", isCorrect: false },
+      { answer: "Rock", isCorrect: true },
+      { answer: "Funk", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o estilo musical que se originou nos Estados Unidos na década de 1950 e tem como características principais a guitarra elétrica e o ritmo acelerado?',
+    options: [
+      { answer: "Rockabilly", isCorrect: true },
+      { answer: "Soul", isCorrect: false },
+      { answer: "Blues", isCorrect: false },
+      { answer: "Country", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome do músico e produtor americano conhecido como o "Rei do Pop"?',
+    options: [
+      { answer: "Prince", isCorrect: false },
+      { answer: "Michael Jackson", isCorrect: true },
+      { answer: "James Brown", isCorrect: false },
+      { answer: "Stevie Wonder", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome da música do Michael Jackson que ficou 7 semanas consecutivas em primeiro lugar nas paradas de sucesso dos Estados Unidos em 1983?',
+    options: [
+      { answer: "Billie Jean", isCorrect: true },
+      { answer: "Thriller", isCorrect: false },
+      { answer: "Beat It", isCorrect: false },
+      { answer: "The Way You Make Me Feel", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome do famoso festival de música que ocorreu em 1969?',
+    options: [
+      { answer: "Woodstock", isCorrect: true },
+      { answer: "Isle of Wight Festival", isCorrect: false },
+      { answer: "Monterey Pop Festival", isCorrect: false },
+      { answer: "Live Aid", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome do álbum de Michael Jackson que incluiu sucessos como "Thriller" e "Beat It"?',
+    options: [
+      { answer: "Off the Wall", isCorrect: false },
+      { answer: "Bad", isCorrect: false },
+      { answer: "Dangerous", isCorrect: false },
+      { answer: "Thriller", isCorrect: true }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome do herói que é considerado o símbolo do jogo Dota 2?',
+    options: [
+      { answer: 'Lina', isCorrect: false },
+      { answer: 'Juggernaut', isCorrect: false },
+      { answer: 'Invoker', isCorrect: false },
+      { answer: 'Pudge', isCorrect: true }
+    ],
+    category: 'games'
+  },
+  {
+    question: 'Qual é o nome do herói que tem o poder de transformar inimigos em galinhas no jogo Dota 2?',
+    options: [
+      { answer: 'Shadow Shaman', isCorrect: false },
+      { answer: 'Visage', isCorrect: false },
+      { answer: 'Bane', isCorrect: false },
+      { answer: 'Lion', isCorrect: true }
+    ],
+    category: 'games'
+  },
+  {
+    question: 'Qual é o nome do herói que tem o poder de se teleportar para qualquer lugar do mapa no jogo Dota 2?',
+    options: [
+      { answer: 'Anti-Mage', isCorrect: false },
+      { answer: 'Storm Spirit', isCorrect: true },
+      { answer: 'Ember Spirit', isCorrect: false },
+      { answer: 'Earth Spirit', isCorrect: false }
+    ],
+    category: 'games'
+  },
+  {
+    question: 'Qual é o nome do personagem principal interpretado por Will Smith no filme "Eu Sou a Lenda"?',
+    options: [
+      { answer: "Robert Neville", isCorrect: true },
+      { answer: "Ethan Hunt", isCorrect: false },
+      { answer: "John McClane", isCorrect: false },
+      { answer: "Jack Sparrow", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual é a principal ameaça do personagem de Will Smith no filme "Eu Sou a Lenda"?',
+    options: [
+      { answer: "Vírus", isCorrect: true },
+      { answer: "Zumbis", isCorrect: false },
+      { answer: "Robôs", isCorrect: false },
+      { answer: "Monstros", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'O filme "Eu Sou a Lenda" é baseado em qual livro?',
+    options: [
+      { answer: "1984", isCorrect: false },
+      { answer: "Admirável Mundo Novo", isCorrect: false },
+      { answer: "Eu Sou a Lenda", isCorrect: true },
+      { answer: "O Jogador Número 1", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual o ano de lançamento do filme "V de Vingança"?',
+    options: [
+    { answer: '2006', isCorrect: true },
+    { answer: '2005', isCorrect: false },
+    { answer: '2007', isCorrect: false },
+    { answer: '2008', isCorrect: false }
+    ],
+    category: 'movies'
+    },
+    {
+    question: 'Quem dirigiu o filme "V de Vingança"?',
+    options: [
+    { answer: 'Lana Wachowski', isCorrect: false },
+    { answer: 'Tom Tykwer', isCorrect: false },
+    { answer: 'Lilly Wachowski', isCorrect: false },
+    { answer: 'James McTeigue', isCorrect: true }
+    ],
+    category: 'movies'
+    },
+  
 ];
 
 export default questionsList;

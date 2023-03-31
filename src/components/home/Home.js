@@ -11,8 +11,8 @@ function Home() {
   const [emailValidation, setEmailValidation] = useState(null);
 
   // Contexto global
-  const { setStoredName } = useContext(GlobalContext);
-
+  const { setStoredName, setQuizzgameType } = useContext(GlobalContext);
+ 
   // Expressão regular para validar o email
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
@@ -40,6 +40,12 @@ function Home() {
     setEmail(e.target.value);
   }
 
+  // Funçao para lidar com a mudanca de tipo de Quizzgame
+  const handleQuizzgameTypeChange = (event) => {
+    setQuizzgameType(event.target.value);
+    localStorage.setItem("quizzgameType", event.target.value);
+  };
+
   // Função para lidar com a validação do campo de email
   const handleEmailBlur = () => {
     setEmailValidation(emailRegex.test(email) ? true : false);
@@ -51,7 +57,7 @@ function Home() {
     const isFormValid = nome && email && nomeValidation && emailValidation;
     setNomeValidation(nome.length >= 3 ? true : false);
     setEmailValidation(emailRegex.test(email) ? true : false);
-
+   
     if (isFormValid) {
       navigate('/perguntas'); // Navega para a página de perguntas
     }
@@ -64,19 +70,31 @@ function Home() {
         <h1 className='title__container'>Quizzgame</h1>
       </div>
       <form className='form'>
+
         <div className='input__container'>
           <label htmlFor='name'>Digite seu nome</label>
           <input type='text' id='name' value={nome} onChange={handleNameChange} className={`${nomeValidation === false ? 'input-error' : 'input-ok'} input`} required onBlur={handleNameBlur} />
           {nomeValidation === false ? <p className='error-mensage'>Campo precisa ser preenchido.</p> : ''}
         </div>
+
         <div className="input__container">
           <label>Digite seu email</label>
           <input type='email' id='email' value={email} onChange={handleEmailChange} className={`${emailValidation === false ? 'input-error' : 'input-ok'} input`} onBlur={handleEmailBlur} required />
           {emailValidation === false ? <p className='error-mensage'> Preencha um email valido.</p> : ''}
+          
+          <div className='quizzgame-type-wrapper'>
+            <label htmlFor="quizzgame-type" className='quizzgame-type-label'>Escolha o tipo de QuizzGame:</label>
+            <select id="quizzgame-type" className='quizzgame-type-select' onChange={handleQuizzgameTypeChange}>
+              <option value="default" className='quizzgame-type-option'>Conhecimentos gerais</option>
+              <option value="fun" className='quizzgame-type-option'>Recreação conteporanea</option>
+            </select>
+          </div>
         </div>
+
         <div className='btn__container'>
-          <NavLink to='/perguntas' onClick={handleFormSubmit} >Começar</NavLink>
+          <NavLink to='/perguntas' onClick={handleFormSubmit}>Começar</NavLink>
         </div>
+
       </form>
     </main>
   );

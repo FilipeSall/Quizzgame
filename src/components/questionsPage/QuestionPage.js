@@ -4,8 +4,10 @@ import { GlobalContext } from '../../GlobalContext.js';
 import ScoreDisplay from '../scoreDisplay/ScoreDisplay';
 import NextBtn from '../../assets/images/next.svg';
 import questionsList from './ListQuestions.js';
+
 import { Link, useNavigate } from 'react-router-dom';
 import { BiLogIn } from "react-icons/bi";
+import shuffleQuestions from '../../script/shuffledQuestions.js';
 
 function QuestionPage() {
 
@@ -16,7 +18,21 @@ function QuestionPage() {
   const navigate = useNavigate();
 
   // Contexto global de pontuação e nome armazenado
-  const { setScore, storedName, setStoredName } = useContext(GlobalContext);
+  const { setScore, storedName, setStoredName, quizzgameType, setQuizzgameType } = useContext(GlobalContext);
+
+  const categoryCounts = questionsList.reduce((acc, question) => {
+    const category = question.category;
+
+    if (acc[category]) {
+      acc[category] += 1;
+    } else {
+      acc[category] = 1;
+    }
+
+    return acc;
+  }, {});
+
+  console.log(categoryCounts);
 
   // Index da pergunta atual e estado de resposta
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -25,30 +41,25 @@ function QuestionPage() {
   // Index da opção clicada e array embaralhado de perguntas
   const [clickedOptionIndex, setClickedOptionIndex] = useState(null);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [shuffledQuestionsList, setShuffledQuestionsList] = useState([]);
 
+  //embaralhar a lista (questionsList) e armazenar o resultado no estado shuffledQuestions
   useEffect(() => {
     const shuffledList = questionsList.sort(() => Math.random() - 0.5);
-    setShuffledQuestionsList(shuffledList);
+    setShuffledQuestions(shuffledList);
   }, []);
 
-  // Embaralha as perguntas quando o componente é montado
+  // Aqui é passado um array com as categorias de perguntas que devem ser consideradas e o número de perguntas de cada categoria. os param sao: questions, categories, numQuestions.
   useEffect(() => {
-    const historyQuestions = shuffledQuestionsList.filter(
-      (question) => question.category === "history"
-    ).slice(0, 10);
-    const scienceQuestions = shuffledQuestionsList.filter(
-      (question) => question.category === "science"
-    ).slice(0, 10);
-    const artQuestions = shuffledQuestionsList.filter(
-      (question) => question.category === "art"
-    ).slice(0, 10);
-    const shuffled = historyQuestions
-      .concat(scienceQuestions)
-      .concat(artQuestions)
-      .sort(() => Math.random() - 0.5);
-    setShuffledQuestions(shuffled);
-  }, [shuffledQuestionsList]);
+    if (quizzgameType === 'default') {
+      const shuffled = shuffleQuestions(questionsList, ['history', 'science', 'art'], 10);
+      setShuffledQuestions(shuffled);
+    }
+    if (quizzgameType === 'fun') {
+      const shuffled = shuffleQuestions(questionsList, ['movies', 'games', 'music'], 10);
+      setShuffledQuestions(shuffled);
+    }
+  }, [quizzgameType]);
+
 
   // Lida com o clique do usuário em uma resposta
   const handleClick = (isCorrect, index) => {
@@ -71,6 +82,15 @@ function QuestionPage() {
             case 'art':
               updatedScore.artScore += 1;
               break;
+            case 'movies':
+              updatedScore.moviesScore += 1;
+              break;
+            case 'games':
+              updatedScore.gamesScore += 1;
+              break;
+            case 'music':
+              updatedScore.musicScore += 1;
+              break;
             default:
               break;
           }
@@ -78,14 +98,13 @@ function QuestionPage() {
           return updatedScore;
 
         });
+
       }
     };
 
     // Se for a última pergunta, redireciona para a tela de resumo
     if (questionIndex === shuffledQuestions.length - 1) {
-      setTimeout(() => {
-        navigate('/resumo');
-      }, 1000);
+      navigate('/resumo');
     }
   };
 
@@ -104,9 +123,10 @@ function QuestionPage() {
 
   // Lida com o logout e redireciona para a tela de login
   const handleLogout = () => {
-    setScore({ historyScore: 0, scienceScore: 0, artScore: 0 });
+    setScore({ historyScore: 0, scienceScore: 0, artScore: 0, musicScore:0, gamesScore:0, moviesScore:0 });
     localStorage.clear();
     setStoredName("");
+    setQuizzgameType('default');
     navigate("/");
   };
 

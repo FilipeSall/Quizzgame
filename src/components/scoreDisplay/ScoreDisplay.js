@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 import './scoredisplay.css';
-import { GiMedievalGate, GiAtom, GiPalette } from "react-icons/gi";
+import { GiMedievalGate, GiAtom, GiPalette, GiGamepad } from "react-icons/gi";
+import { BiMovie, BiMusic } from "react-icons/bi";
 import { GlobalContext } from '../../GlobalContext';
-
 function ScoreDisplay() {
 
-    const {score} = useContext(GlobalContext);
+    const {score, quizzgameType} = useContext(GlobalContext);
 
     const sizeIcon = 35;
 
-    const themes = [
+    const DefaultThemes = [
         {
             title: 'História',
             icon: <GiMedievalGate size={sizeIcon}/>,
@@ -26,6 +26,29 @@ function ScoreDisplay() {
             score: score.artScore
         }
     ]
+
+    const funThemes = [
+        {
+            title: 'Cinema',
+            icon: <BiMovie size={sizeIcon}/>,
+            score: score.moviesScore
+        },
+        {
+            title: 'Jogos',
+            icon: <GiGamepad size={sizeIcon}/>,
+            score: score.gamesScore
+        },
+        {
+            title: 'Musica',
+            icon: <BiMusic size={sizeIcon}/>,
+            score: score.musicScore
+        },
+    ]
+
+    let themes = [];
+
+    if (quizzgameType === 'default') themes = DefaultThemes;
+    if (quizzgameType === 'fun') themes = funThemes;
 
     return (
         <div className='score-display'>
