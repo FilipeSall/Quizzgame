@@ -16,7 +16,7 @@
     color: var(--c1);
 }
 
-.header>h1 {
+.header > h1 {
     font-size: 4rem;
 }
 
@@ -29,7 +29,6 @@
     justify-content: center;
     flex-wrap: wrap;
     overflow: auto; 
-
 }
 
 .question-card {

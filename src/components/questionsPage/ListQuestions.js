@@ -1611,24 +1611,323 @@ const questionsList = [
   {
     question: 'Qual o ano de lançamento do filme "V de Vingança"?',
     options: [
-    { answer: '2006', isCorrect: true },
-    { answer: '2005', isCorrect: false },
-    { answer: '2007', isCorrect: false },
-    { answer: '2008', isCorrect: false }
+      { answer: '2006', isCorrect: true },
+      { answer: '2005', isCorrect: false },
+      { answer: '2007', isCorrect: false },
+      { answer: '2008', isCorrect: false }
     ],
     category: 'movies'
-    },
-    {
+  },
+  {
     question: 'Quem dirigiu o filme "V de Vingança"?',
     options: [
-    { answer: 'Lana Wachowski', isCorrect: false },
-    { answer: 'Tom Tykwer', isCorrect: false },
-    { answer: 'Lilly Wachowski', isCorrect: false },
-    { answer: 'James McTeigue', isCorrect: true }
+      { answer: 'Lana Wachowski', isCorrect: false },
+      { answer: 'Tom Tykwer', isCorrect: false },
+      { answer: 'Lilly Wachowski', isCorrect: false },
+      { answer: 'James McTeigue', isCorrect: true }
     ],
     category: 'movies'
-    },
-  
+  },
+  {
+    question: 'Qual é o nome da música da Britney Spears que começa com as palavras "It\'s Britney, bitch!"?',
+    options: [
+      { answer: 'Toxic', isCorrect: false },
+      { answer: 'Gimme More', isCorrect: true },
+      { answer: 'Oops!...I Did It Again', isCorrect: false },
+      { answer: 'Baby One More Time', isCorrect: false }
+    ],
+    category: 'music'
+  },
+  {
+    question: 'Quem lançou a música "Umbrella" em 2007?',
+    options: [
+      { answer: 'Beyoncé', isCorrect: false },
+      { answer: 'Rihanna', isCorrect: true },
+      { answer: 'Lady Gaga', isCorrect: false },
+      { answer: 'Katy Perry', isCorrect: false }
+    ],
+    category: 'music'
+  },
+  {
+    question: 'Qual foi o nome do primeiro álbum solo de Justin Timberlake, lançado em 2002?',
+    options: [
+      { answer: 'The 20/20 Experience', isCorrect: false },
+      { answer: 'Justified', isCorrect: true },
+      { answer: 'FutureSex/LoveSounds', isCorrect: false },
+      { answer: 'Man of the Woods', isCorrect: false }
+    ],
+    category: 'music'
+  },
+  {
+    question: 'Qual é o nome do hit de Shakira que foi lançado em 2006 e apresenta a frase "Lucky that my breasts are small and humble, so you don\'t confuse them with mountains"?',
+    options: [
+      { answer: 'Hips Don\'t Lie', isCorrect: true },
+      { answer: 'Whenever, Wherever', isCorrect: false },
+      { answer: 'La Tortura', isCorrect: false },
+      { answer: 'Beautiful Liar', isCorrect: false }
+    ],
+    category: 'music'
+  },
+  {
+    question: 'Qual cantor britânico lançou seu álbum de estreia "19" em 2008, apresentando os hits "Chasing Pavements" e "Make You Feel My Love"?',
+    options: [
+      { answer: "Adele", isCorrect: true },
+      { answer: "Amy Winehouse", isCorrect: false },
+      { answer: "Lily Allen", isCorrect: false },
+      { answer: "Duffy", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Em 2005, quem lançou o álbum "The Emancipation of Mimi", que apresentou os hits "We Belong Together" e "Shake It Off"?',
+    options: [
+      { answer: "Mariah Carey", isCorrect: true },
+      { answer: "Beyoncé", isCorrect: false },
+      { answer: "Christina Aguilera", isCorrect: false },
+      { answer: "Whitney Houston", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual foi o primeiro single do grupo Black Eyed Peas a chegar ao topo da parada da Billboard em 2003?',
+    options: [
+      { answer: "Where Is the Love?", isCorrect: true },
+      { answer: "Let's Get It Started", isCorrect: false },
+      { answer: "My Humps", isCorrect: false },
+      { answer: "Shut Up", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome do single de Katy Perry de 2008 que ficou no topo da parada da Billboard por sete semanas consecutivas?',
+    options: [
+      { answer: "I Kissed a Girl", isCorrect: true },
+      { answer: "Hot N Cold", isCorrect: false },
+      { answer: "California Gurls", isCorrect: false },
+      { answer: "Firework", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual banda pop adolescente teve um sucesso enorme em 2000 com o single "Its Gonna Be Me"?',
+    options: [
+      { answer: "Backstreet Boys", isCorrect: false },
+      { answer: "Hanson", isCorrect: false },
+      { answer: "98 Degrees", isCorrect: false },
+      { answer: "NSYNC", isCorrect: true }
+    ],
+    category: "music"
+  },
+  {
+    question: 'Qual é o nome do festival de música techno que ocorre anualmente em Detroit, nos Estados Unidos?',
+    options: [
+      { answer: "Ultra Music Festival", isCorrect: false },
+      { answer: "Tomorrowland", isCorrect: false },
+      { answer: "Sónar", isCorrect: false },
+      { answer: "Movement", isCorrect: true }
+    ],
+    category: "music"
+  },
+  {
+    question: "Qual é o nome do primeiro filme da franquia Vingadores lançado em 2012?",
+    options: [
+      { answer: "Vingadores: Guerra Infinita", isCorrect: false },
+      { answer: "Vingadores: Era de Ultron", isCorrect: false },
+      { answer: "Os Vingadores", isCorrect: true },
+      { answer: "Vingadores: Ultimato", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do vilão que os Vingadores enfrentaram no primeiro filme?",
+    options: [
+      { answer: "Loki", isCorrect: true },
+      { answer: "Thanos", isCorrect: false },
+      { answer: "Ultron", isCorrect: false },
+      { answer: "Red Skull", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do personagem interpretado por Robert Downey Jr. na franquia Vingadores?",
+    options: [
+      { answer: "Capitão América", isCorrect: false },
+      { answer: "Homem de Ferro", isCorrect: true },
+      { answer: "Hulk", isCorrect: false },
+      { answer: "Thor", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Quantas casas o tabuleiro de xadrez possui?",
+    options: [
+      { answer: "64", isCorrect: true },
+      { answer: "56", isCorrect: false },
+      { answer: "72", isCorrect: false },
+      { answer: "48", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome da jogada especial do xadrez em que o rei e uma torre se movem simultaneamente?",
+    options: [
+      { answer: "Rocha", isCorrect: true },
+      { answer: "Xeque", isCorrect: false },
+      { answer: "En passant", isCorrect: false },
+      { answer: "Promoção", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome da jogada especial do xadrez em que um peão pode ser movido duas casas na sua primeira jogada?",
+    options: [
+      { answer: "Avanço duplo", isCorrect: true },
+      { answer: "Xeque-mate", isCorrect: false },
+      { answer: "En passant", isCorrect: false },
+      { answer: "Promoção", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o lema da Casa Stark?",
+    options: [
+      { answer: "Hear Me Roar", isCorrect: false },
+      { answer: "Growing Strong", isCorrect: false },
+      { answer: "Unbowed, Unbent, Unbroken", isCorrect: false },
+      { answer: "Winter is Coming", isCorrect: true }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Quem matou Joffrey Baratheon na serie GoT?",
+    options: [
+      { answer: "Cersei Lannister", isCorrect: false },
+      { answer: "Tyrion Lannister", isCorrect: false },
+      { answer: "Olenna Tyrell", isCorrect: true },
+      { answer: "Sansa Stark", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome da cidade onde está localizada a Fortaleza Vermelha?",
+    options: [
+      { answer: "Braavos", isCorrect: false },
+      { answer: "Meereen", isCorrect: false },
+      { answer: "Porto Real", isCorrect: true },
+      { answer: "Winterfell", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome da espada de Jon Snow em GoT?",
+    options: [
+      { answer: "Garra", isCorrect: false },
+      { answer: "Agulha", isCorrect: false },
+      { answer: "Gelo", isCorrect: false },
+      { answer: "Longclaw", isCorrect: true }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do filho mais novo de Ned Stark em GoT?",
+    options: [
+      { answer: "Robb Stark", isCorrect: false },
+      { answer: "Rickon Stark", isCorrect: true },
+      { answer: "Bran Stark", isCorrect: false },
+      { answer: "Jon Snow", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Quem é a mãe dos dragões em GoT?",
+    options: [
+      { answer: "Cersei Lannister", isCorrect: false },
+      { answer: "Margaery Tyrell", isCorrect: false },
+      { answer: "Daenerys Targaryen", isCorrect: true },
+      { answer: "Sansa Stark", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: 'Qual foi a frase que Arya Stark aprendeu com Jaqen H’ghar e que se tornou sua marca registrada?',
+    options: [
+      { answer: 'Valar Dohaeris', isCorrect: false },
+      { answer: 'Valar Morghulis', isCorrect: true },
+      { answer: 'Valar Ressurection', isCorrect: false },
+      { answer: 'Valar Enjoyment', isCorrect: false },
+    ],
+    category: 'movies'
+  },
+  {
+    question: 'Qual foi a frase que Arya Stark aprendeu com Jaqen H’ghar e que se tornou sua marca registrada?',
+    options: [
+      { answer: 'Valar Dohaeris', isCorrect: false },
+      { answer: 'Valar Morghulis', isCorrect: true },
+      { answer: 'Valar Ressurection', isCorrect: false },
+      { answer: 'Valar Enjoyment', isCorrect: false },
+    ],
+    category: 'movies'
+  },
+  {
+    question: 'Qual foi a arma que foi dada para Arya por Jon Snow?',
+    options: [
+      { answer: 'Agulha', isCorrect: true },
+      { answer: 'Gelo', isCorrect: false },
+      { answer: 'Luminífera', isCorrect: false },
+      { answer: 'Dente de Dragão', isCorrect: false },
+    ],
+    category: 'movies'
+  },
+  {
+    question: 'Arya estudou com qual grupo de assassinos em Braavos?',
+    options: [
+      { answer: 'Filhos do Harpia', isCorrect: false },
+      { answer: 'Mercenários de Daario Naharis', isCorrect: false },
+      { answer: 'A Ordem do Corvo de Sangue', isCorrect: false },
+      { answer: 'Os Homens Sem Rosto', isCorrect: true },
+    ],
+    category: 'movies'
+  },
+  {
+    question: 'Qual o nome do lobo de estimação de Robb Stark em "Game of Thrones"?',
+    options: [
+      { answer: "Fantasma", isCorrect: false },
+      { answer: "Vento Cinzento", isCorrect: false },
+      { answer: "Cão Felpudo", isCorrect: false },
+      { answer: "Vento Cinzento", isCorrect: true }
+    ],
+    category: "Game of Thrones"
+  },
+  {
+    question: 'Qual a relação de Robb Stark com a personagem Talisa Maegyr?',
+    options: [
+      { answer: "Amante", isCorrect: true },
+      { answer: "Prisioneira", isCorrect: false },
+      { answer: "Protetora", isCorrect: false },
+      { answer: "Rival", isCorrect: false }
+    ],
+    category: "Game of Thrones"
+  },
+  {
+    question: 'Qual o verdadeiro nome do Rei da Noite em "Game of Thrones"?',
+    options: [
+      { answer: "Brandon Stark", isCorrect: false },
+      { answer: "Jon Snow", isCorrect: false },
+      { answer: "Night King", isCorrect: false },
+      { answer: "Ninguém sabe", isCorrect: true }
+    ],
+    category: "Game of Thrones"
+  },
+  {
+    question: 'Qual é a origem do Rei da Noite em "Game of Thrones"?',
+    options: [
+      { answer: "Um homem morto", isCorrect: false },
+      { answer: "Um Caminhante Branco", isCorrect: false },
+      { answer: "Um antigo membro da Patrulha da Noite", isCorrect: false },
+      { answer: "Um antigo humano transformado por magia", isCorrect: true }
+    ],
+    category: "Game of Thrones"
+  },
 ];
 
 export default questionsList;
