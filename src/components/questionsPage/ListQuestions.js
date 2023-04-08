@@ -1231,8 +1231,8 @@ const questionsList = [
   {
     question: "Qual é a cidade onde se passa a história de Arcane?",
     options: [
-      { answer: "Piltover", isCorrect: true },
-      { answer: "Zaun", isCorrect: false },
+      { answer: "Piltover e Zaum", isCorrect: true },
+      { answer: "Ionia", isCorrect: false },
       { answer: "Demacia", isCorrect: false },
       { answer: "Noxus", isCorrect: false }
     ],
