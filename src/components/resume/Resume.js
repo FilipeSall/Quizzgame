@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { GlobalContext } from '../../GlobalContext';
 import './resume.css';
+import ScoreTable from '../scoreTable/ScoreTable.js';
 
 function Resume() {
 
@@ -20,60 +21,28 @@ function Resume() {
     // Limpar o localStorage
     localStorage.clear();
   };
-
-  console.log(score)
-  console.log(quizzgameType)
  
   return (
     <section className="resume__container">
       <h1>Sua pontuaçao final, {storedName}</h1>
       {quizzgameType === 'default' ? (
-        <table>
-          <thead>
-            <tr>
-              <th>Categoria</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Arte</td>
-              <td>{score.artScore}</td>
-            </tr>
-            <tr>
-              <td>Ciência</td>
-              <td>{score.scienceScore}</td>
-            </tr>
-            <tr>
-              <td>História</td>
-              <td>{score.historyScore}</td>
-            </tr>
-          </tbody>
-        </table>
+        <ScoreTable
+        categories={[
+          { name: 'Arte', score: score.artScore },
+          { name: 'Ciência', score: score.scienceScore },
+          { name: 'História', score: score.historyScore },
+        ]}
+      />
       ) : (
-        <table>
-          <thead>
-            <tr>
-              <th>Categoria</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cinema</td>
-              <td>{score.moviesScore}</td>
-            </tr>
-            <tr>
-              <td>Jogos</td>
-              <td>{score.gamesScore}</td>
-            </tr>
-            <tr>
-              <td>Música</td>
-              <td>{score.musicScore}</td>
-            </tr>
-          </tbody>
-        </table>
-      )}
+        <ScoreTable
+        categories={[
+          { name: 'Cinema', score: score.moviesScore },
+          { name: 'Jogos', score: score.gamesScore },
+          { name: 'Música', score: score.musicScore },
+        ]}
+      />
+    )}
+
       <div className="buttons-container">
         <Link to="/" onClick={handleReset} className="button home-button">
           Ir para a tela inicial

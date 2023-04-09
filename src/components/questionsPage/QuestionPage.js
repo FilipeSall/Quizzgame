@@ -61,7 +61,6 @@ function QuestionPage() {
     }
   }, [quizzgameType]);
 
-
   // Lida com o clique do usuário em uma resposta
   const handleClick = (isCorrect, index) => {
     if (!answered) {
