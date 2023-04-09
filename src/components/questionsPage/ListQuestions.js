@@ -2087,7 +2087,77 @@ const questionsList = [
       { answer: "Brian Moser", isCorrect: true }
     ],
     category: "movies"
-  }
+  },
+  {
+    question: "Qual DJ francês é conhecido por sucessos como 'Titanium' e 'Without You'?",
+    options: [
+      { answer: "David Guetta", isCorrect: true },
+      { answer: "Martin Garrix", isCorrect: false },
+      { answer: "Calvin Harris", isCorrect: false },
+      { answer: "Tiesto", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: "Qual é o nome da cantora brasileira de funk que se tornou internacionalmente famosa com a música 'Show das Poderosas'?",
+    options: [
+      { answer: "Ludmilla", isCorrect: false },
+      { answer: "Anitta", isCorrect: true },
+      { answer: "Valesca Popozuda", isCorrect: false },
+      { answer: "MC Carol", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: "Qual hit do MC Fioti se tornou um sucesso mundial e foi relançado com artistas internacionais?",
+    options: [
+      { answer: "Bum Bum Tam Tam", isCorrect: true },
+      { answer: "Olha a Explosão", isCorrect: false },
+      { answer: "Baile de Favela", isCorrect: false },
+      { answer: "Vai Malandra", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: "Qual é o nome do produtor e DJ brasileiro que ganhou destaque no funk brasileiro com o lançamento do álbum 'Tropical Bass'?",
+    options: [
+      { answer: "Alok", isCorrect: false },
+      { answer: "Vintage Culture", isCorrect: false },
+      { answer: "Dennis DJ", isCorrect: true },
+      { answer: "Felguk", isCorrect: false }
+    ],
+    category: "music"
+  },
+  {
+    question: "Qual foi o ano de lançamento do clássico jogo de arcade Pac-Man?",
+    options: [
+      { answer: "1978", isCorrect: false },
+      { answer: "1980", isCorrect: true },
+      { answer: "1982", isCorrect: false },
+      { answer: "1984", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome da personagem feminina introduzida na sequência do jogo Pac-Man?",
+    options: [
+      { answer: "Ms. Pac-Man", isCorrect: true },
+      { answer: "Pac-Woman", isCorrect: false },
+      { answer: "Lady Pac", isCorrect: false },
+      { answer: "Pac-Girl", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome do evento principal de DOTA 2, onde as melhores equipes do mundo competem pelo título e prêmio em dinheiro?",
+    options: [
+      { answer: "The International", isCorrect: true },
+      { answer: "DOTA 2 World Championship", isCorrect: false },
+      { answer: "DOTA 2 Major", isCorrect: false },
+      { answer: "Battle of the Ancients", isCorrect: false }
+    ],
+    category: "games"
+  },
   
 ];
 
