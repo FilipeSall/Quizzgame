@@ -30,3 +30,11 @@ tbody tr:hover {
     background-color: #e0e0e0;
     cursor: pointer;
 }
+
+.feedback-container {
+    margin-top: 1rem;
+  }
+  
+  .feedback-text {
+    margin-bottom: 0.5rem;
+  }
