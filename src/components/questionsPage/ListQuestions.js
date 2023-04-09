@@ -1896,7 +1896,7 @@ const questionsList = [
       { answer: "Cão Felpudo", isCorrect: false },
       { answer: "Vento Cinzento", isCorrect: true }
     ],
-    category: "Game of Thrones"
+    category: "movies"
   },
   {
     question: 'Qual a relação de Robb Stark com a personagem Talisa Maegyr?',
@@ -1906,7 +1906,7 @@ const questionsList = [
       { answer: "Protetora", isCorrect: false },
       { answer: "Rival", isCorrect: false }
     ],
-    category: "Game of Thrones"
+    category: "movies"
   },
   {
     question: 'Qual o verdadeiro nome do Rei da Noite em "Game of Thrones"?',
@@ -1916,7 +1916,7 @@ const questionsList = [
       { answer: "Night King", isCorrect: false },
       { answer: "Ninguém sabe", isCorrect: true }
     ],
-    category: "Game of Thrones"
+    category: "movies"
   },
   {
     question: 'Qual é a origem do Rei da Noite em "Game of Thrones"?',
@@ -1926,8 +1926,169 @@ const questionsList = [
       { answer: "Um antigo membro da Patrulha da Noite", isCorrect: false },
       { answer: "Um antigo humano transformado por magia", isCorrect: true }
     ],
-    category: "Game of Thrones"
+    category: "movies"
   },
+  {
+    question: "Qual é o nome do protagonista de Breaking Bad?",
+    options: [
+      { answer: "Walter White", isCorrect: true },
+      { answer: "Jesse Pinkman", isCorrect: false },
+      { answer: "Hank Schrader", isCorrect: false },
+      { answer: "Saul Goodman", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é a profissão original de Walter White em Breaking Bad?",
+    options: [
+      { answer: "Professor de química", isCorrect: true },
+      { answer: "Advogado", isCorrect: false },
+      { answer: "Policial", isCorrect: false },
+      { answer: "Médico", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é a cidade em que se passa a maior parte da trama de Breaking Bad?",
+    options: [
+      { answer: "Albuquerque", isCorrect: true },
+      { answer: "Los Angeles", isCorrect: false },
+      { answer: "Nova York", isCorrect: false },
+      { answer: "Chicago", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Quantas cartas são distribuídas para cada jogador no início do jogo de truco?",
+    options: [
+      { answer: "3", isCorrect: true },
+      { answer: "4", isCorrect: false },
+      { answer: "5", isCorrect: false },
+      { answer: "6", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é a ordem das cartas no truco?",
+    options: [
+      { answer: "A, K, J, Q, 7, 6, 5, 4, 3, 2", isCorrect: false },
+      { answer: "A, 3, K, J, Q, 2", isCorrect: true },
+      { answer: "A, K, J, Q, 10, 9, 8, 7, 6, 5, 4, 3, 2", isCorrect: false },
+      { answer: "A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o valor da carta de espadas no truco?",
+    options: [
+      { answer: "3", isCorrect: false },
+      { answer: "1", isCorrect: true },
+      { answer: "10", isCorrect: false },
+      { answer: "7", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o objetivo do truco?",
+    options: [
+      { answer: "Fazer o maior número possível de jogadas", isCorrect: false },
+      { answer: "Fazer o maior número possível de pontos", isCorrect: false },
+      { answer: "Fazer três pontos antes do outro time", isCorrect: true },
+      { answer: "Ter mais cartas na mão do que o outro time", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Quais são as cartas que valem mais pontos no truco?",
+    options: [
+      { answer: "A, 7, 4", isCorrect: false },
+      { answer: "K, J, Q", isCorrect: true },
+      { answer: "3, 2", isCorrect: false },
+      { answer: "Todas as cartas valem a mesma quantidade de pontos", isCorrect: false }
+    ],
+    category: "games"
+  },
+  {
+    question: "Qual é o nome do personagem interpretado por Neil Patrick Harris na série 'How I Met Your Mother'?",
+    options: [
+      { answer: "Ted Mosby", isCorrect: false },
+      { answer: "Barney Stinson", isCorrect: true },
+      { answer: "Marshall Eriksen", isCorrect: false },
+      { answer: "Lily Aldrin", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do bar frequentado pelos personagens em 'How I Met Your Mother'?",
+    options: [
+      { answer: "Puzzles", isCorrect: false },
+      { answer: "The Drunken Clam", isCorrect: false },
+      { answer: "MacLaren's Pub", isCorrect: true },
+      { answer: "Cheers", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome da personagem interpretada por Cobie Smulders na série 'How I Met Your Mother'?",
+    options: [
+      { answer: "Robin Scherbatsky", isCorrect: true },
+      { answer: "Lily Aldrin", isCorrect: false },
+      { answer: "Tracy McConnell", isCorrect: false },
+      { answer: "Victoria", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome completo do protagonista da série Dexter?",
+    options: [
+      { answer: "Dexter Michael Morgan", isCorrect: false },
+      { answer: "Dexter Jay Morgan", isCorrect: true },
+      { answer: "Dexter Samuel Morgan", isCorrect: false },
+      { answer: "Dexter John Morgan", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome da irmã adotiva de Dexter que também trabalha no departamento de polícia?",
+    options: [
+      { answer: "Rita Morgan", isCorrect: false },
+      { answer: "Debra Morgan", isCorrect: true },
+      { answer: "Hannah McKay", isCorrect: false },
+      { answer: "Lila West", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do assassino em série conhecido como o 'Trinity Killer' em Dexter?",
+    options: [
+      { answer: "Miguel Prado", isCorrect: false },
+      { answer: "Jordan Chase", isCorrect: false },
+      { answer: "Arthur Mitchell", isCorrect: true },
+      { answer: "Isaak Sirko", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do filho de Dexter e sua esposa Rita?",
+    options: [
+      { answer: "Harrison Morgan", isCorrect: true },
+      { answer: "Michael Morgan", isCorrect: false },
+      { answer: "David Morgan", isCorrect: false },
+      { answer: "William Morgan", isCorrect: false }
+    ],
+    category: "movies"
+  },
+  {
+    question: "Qual é o nome do assassino em série que Dexter tem como mentor na primeira temporada?",
+    options: [
+      { answer: "Jordan Chase", isCorrect: false },
+      { answer: "Isaak Sirko", isCorrect: false },
+      { answer: "Lila West", isCorrect: false },
+      { answer: "Brian Moser", isCorrect: true }
+    ],
+    category: "movies"
+  }
+  
 ];
 
 export default questionsList;

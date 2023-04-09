@@ -86,7 +86,7 @@ function Home() {
             <label htmlFor="quizzgame-type" className='quizzgame-type-label'>Escolha o tipo de QuizzGame:</label>
             <select id="quizzgame-type" className='quizzgame-type-select' onChange={handleQuizzgameTypeChange}>
               <option value="default" className='quizzgame-type-option'>Conhecimentos gerais</option>
-              <option value="fun" className='quizzgame-type-option'>Recreação conteporanea</option>
+              <option value="fun" className='quizzgame-type-option'>Series, filmes e jogos</option>
             </select>
           </div>
         </div>

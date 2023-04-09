@@ -16,7 +16,7 @@
     color: var(--c1);
 }
 
-.header > h1 {
+.header>h1 {
     font-size: 4rem;
 }
 
@@ -28,11 +28,11 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    overflow: auto; 
+    overflow: auto;
 }
 
 .question-card {
-    width: clamp(70%,95%,100%);
+    width: clamp(70%, 95%, 100%);
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
     text-align: center;
 }
 
-.question-card > h1 {
+.question-card>h1 {
     font-size: 2rem;
     width: clamp(70%, 90%, 100%);
 }
@@ -67,10 +67,10 @@
     transition: background-color .2s ease;
     max-width: 80%;
     white-space: normal;
-    text-align: center; 
+    text-align: center;
     word-wrap: break-word;
-    line-height: 1.3; 
-    padding: 0.5em 1em; 
+    line-height: 1.3;
+    padding: 0.5em 1em;
     min-width: 400px;
 }
 
@@ -83,31 +83,57 @@
     opacity: 0.7;
 }
 
-.correct{
+.correct {
     background-color: var(--c6);
 }
 
-.incorrect{
+.incorrect {
     background-color: var(--c4);
 }
 
-.correctAnime{
+.correctAnime {
     animation: blink 0.2s linear;
 }
-.incorrectAnime{
+
+.incorrectAnime {
     animation: shake 0.3s linear;
 }
 
-.log-out__btn{
+.log-out__btn {
     margin-left: 90%;
 }
 
+.loading__container {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
 @keyframes animeLeft {
-    0%{
+    0% {
         margin-left: -15px;
         opacity: 0;
     }
-    100%{
+
+    100% {
         margin-left: 0;
         opacity: 0.7;
     }
@@ -137,16 +163,27 @@
 }
 
 @keyframes incorrectShake {
-    0%, 100% {
-      transform: translateX(0);
+
+    0%,
+    100% {
+        transform: translateX(0);
     }
-    10%, 30%, 50%, 70%, 90% {
-      transform: translateX(-10px);
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
     }
-    20%, 40%, 60%, 80% {
-      transform: translateX(10px);
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
     }
-  }
+}
 
 @keyframes blink {
 
@@ -176,7 +213,7 @@
 }
 
 @media screen and (max-width:650px) {
-    .question__container{
+    .question__container {
         height: fit-content;
     }
 
@@ -186,7 +223,7 @@
         gap: 1rem;
     }
 
-    .header > h1 {
+    .header>h1 {
         font-size: 3rem;
         margin-top: 1%;
     }
@@ -195,13 +232,13 @@
         height: fit-content;
     }
 
-    .question-card{
+    .question-card {
         flex-wrap: nowrap;
         height: 100%;
         width: 100%;
     }
 
-    .question-card > h1 {
+    .question-card>h1 {
         font-size: 1.5rem;
         margin: 15çpx;
         text-align: start;
@@ -210,14 +247,16 @@
     .button-wrapper {
         height: 30%;
     }
-    .awnser-btn{
+
+    .awnser-btn {
         font-size: 1rem;
         height: 10vh;
         min-width: 75%;
     }
-    .log-out__btn{
+
+    .log-out__btn {
         margin-left: 80%;
         opacity: 0.6;
     }
-    
+
 }

@@ -8,6 +8,7 @@ import questionsList from './ListQuestions.js';
 import { Link, useNavigate } from 'react-router-dom';
 import { BiLogIn } from "react-icons/bi";
 import shuffleQuestions from '../../script/shuffledQuestions.js';
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 function QuestionPage() {
 
@@ -104,7 +105,12 @@ function QuestionPage() {
 
     // Se for a última pergunta, redireciona para a tela de resumo
     if (questionIndex === shuffledQuestions.length - 1) {
-      navigate('/resumo');
+      setTimeout(() => {
+        navigate('/resumo');
+      }, 1000)
+      return () => {
+        clearTimeout();
+      };
     }
   };
 
@@ -119,11 +125,12 @@ function QuestionPage() {
   };
 
   // Seleciona a pergunta atual a partir do array embaralhado ou não
-  const currentQuestion = shuffledQuestions.length > 0 ? shuffledQuestions[questionIndex] : questionsList[questionIndex];
+  const currentQuestion = shuffledQuestions.length > 0 ? shuffledQuestions[questionIndex] : (questionsList.length > 0 ? questionsList[questionIndex] : null);
+
 
   // Lida com o logout e redireciona para a tela de login
   const handleLogout = () => {
-    setScore({ historyScore: 0, scienceScore: 0, artScore: 0, musicScore:0, gamesScore:0, moviesScore:0 });
+    setScore({ historyScore: 0, scienceScore: 0, artScore: 0, musicScore: 0, gamesScore: 0, moviesScore: 0 });
     localStorage.clear();
     setStoredName("");
     setQuizzgameType('default');
@@ -132,47 +139,56 @@ function QuestionPage() {
 
   return (
     <main className='question__container'>
-      <header className='header'>
-        <h1>Ola, {storedName}</h1>
-        <div className='score__container'></div>
-        <ScoreDisplay />
-      </header>
+      {currentQuestion ? (
+        <>
+          <header className='header'>
+            <h1>Ola, {storedName}</h1>
+            <div className='score__container'></div>
+            <ScoreDisplay />
+          </header>
 
-      <div className='question-wrapper'>
-        <div className='question-card'>
-          <h1>{currentQuestion.question}</h1>
-          <div className={`button-wrapper`}>
-            {currentQuestion.options.map((option, j) => (
-              <button
-                key={j}
-                ref={btnClicked}
-                className={`${getButtonClasses(j, option)} ${answered ? (option.isCorrect ? 'correct' : 'incorrect') : ''} `}
-                onClick={() => handleClick(option.isCorrect, j)}
-                disabled={answered}>
-                {answered && clickedOptionIndex === j && (
-                  <span className={`icon-container ${option.isCorrect ? 'correct-icon' : 'incorrect-icon'}`}>
-                    {option.isCorrect ? '✓' : '✗'}
-                  </span>
+          <div className='question-wrapper'>
+            <div className='question-card'>
+              <h1>{currentQuestion.question}</h1>
+              <div className={`button-wrapper`}>
+                {currentQuestion.options.map((option, j) => (
+                  <button
+                    key={j}
+                    ref={btnClicked}
+                    className={`${getButtonClasses(j, option)} ${answered ? (option.isCorrect ? 'correct' : 'incorrect') : ''} `}
+                    onClick={() => handleClick(option.isCorrect, j)}
+                    disabled={answered}>
+                    {answered && clickedOptionIndex === j && (
+                      <span className={`icon-container ${option.isCorrect ? 'correct-icon' : 'incorrect-icon'}`}>
+                        {option.isCorrect ? '✓' : '✗'}
+                      </span>
+                    )}
+                    {option.answer}
+                  </button>
+                ))}
+              </div>
+              {answered &&
+                questionIndex < questionsList.length - 1 && (
+                  <button
+                    onClick={() => {
+                      setQuestionIndex(questionIndex + 1);
+                      setAnswered(false);
+                    }}
+                    className="nextQuestion__btn"
+                  >
+                    <img className="nextQuestion__btn-img" src={NextBtn} alt="proxima pergunta" />
+                  </button>
                 )}
-                {option.answer}
-              </button>
-            ))}
+            </div>
+            <Link to='/' onClick={handleLogout} className='log-out__btn'><BiLogIn size={40} /></Link>
           </div>
-          {answered &&
-            questionIndex < questionsList.length - 1 && (
-              <button
-                onClick={() => {
-                  setQuestionIndex(questionIndex + 1);
-                  setAnswered(false);
-                }}
-                className="nextQuestion__btn"
-              >
-                <img className="nextQuestion__btn-img" src={NextBtn} alt="proxima pergunta" />
-              </button>
-            )}
+        </>
+      ) : (
+        // Exibir uma mensagem ou um carregador enquanto as perguntas não são carregadas
+        <div className="loading__container">
+          <span className="loading-spinner"><AiOutlineLoading3Quarters /></span>Loading...
         </div>
-        <Link to='/' onClick={handleLogout} className='log-out__btn'><BiLogIn size={40} /></Link>
-      </div>
+      )}
     </main>
   );
 }
